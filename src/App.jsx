@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div class="font-outfit ">
+    <div class="font-outfit">
       <Layout /> 
 
     </div>
