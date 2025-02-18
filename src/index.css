@@ -15,6 +15,10 @@
   background-attachment: fixed;
   background-position: center;
 }
+.custom-border {
+  border: 2px solid #ffffff; /* Cambia el color y el grosor del borde según tus preferencias */
+  border-radius: 8px; /* Ajusta el radio de las esquinas si lo deseas */
+}
 
 @tailwind base;
 @tailwind components;

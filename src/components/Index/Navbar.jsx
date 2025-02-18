@@ -18,14 +18,14 @@ const Navbar = () => {
     return (
       <>
       <div>
-      <div  className=" flex items-center justify-between p-2                                                                                                              
-      lg:flex-row ">
+      <div  className=" flex items-center justify-between                                                                                                               
+      lg:flex-row px-6  ">
         <div>
           <a href="#" className="text-white font-mono text-3xl
           tracking-wider flex items-center">NEPTUNO</a>
           </div>
         <div className="space-x-4">
-          <div className="hidden lg:block space-x-2">
+          <div className="hidden lg:block space-x-10 pr-16">
           <a href="#" className="text-white hover:bg-indigo-800
           rounded-full  px-5 py-2 text-xl">Inicio</a>
           <a href="#" className="text-white hover:bg-indigo-800
@@ -45,25 +45,22 @@ const Navbar = () => {
 
 
 
-      <div className="block lg:hidden">
-        {toggle ? (
-          <div className="flex justify-between ml-10">
-          <ul>
-            <li className="text-white  text-xl mb-2 
-            cursor-pointer">Inicio</li>
-            <li className="text-white  text-xl mb-2
-            cursor-pointer">Nosotros</li>
-            <li className="text-white  text-xl mb-2
-            cursor-pointer">Productos</li>
-            <li className="text-white  text-xl mb-2
-            cursor-pointer">Contáctanos</li>
-          </ul>
-        </div>
-        ):(
-          <div></div>
-        )}
+      <div className="block lg:hidden ">
+  {toggle ? (
+    <div className="flex justify-center from-[#00409A]/70 to-[#00409A]/70 rounded-xs shadow-lg text-center">
 
-        </div>
+
+      <ul>
+        <li className="text-white text-xl mb-2 cursor-pointer">Inicio</li>
+        <li className="text-white text-xl mb-2 cursor-pointer">Nosotros</li>
+        <li className="text-white text-xl mb-2 cursor-pointer">Productos</li>
+        <li className="text-white text-xl mb-2 cursor-pointer">Contáctanos</li>
+      </ul>
+    </div>
+  ) : (
+    <div></div>
+  )}
+</div>
         </div>
       </>
 
