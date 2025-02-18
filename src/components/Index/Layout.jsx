@@ -18,6 +18,7 @@ const Layout = () => {
       </div>
 
       <CarouselProducts />
+
     </div>
   );
 };
