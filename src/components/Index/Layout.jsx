@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import ImgPrincipal from "./ImgPrincipal";
 import CarouselProducts from "./CarouselProducts";
+import Elegimos from "./Elegimos";
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
       </div>
 
       <CarouselProducts />
+      <Elegimos/>
     </div>
   );
 };
