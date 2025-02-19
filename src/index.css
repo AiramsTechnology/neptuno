@@ -15,10 +15,67 @@
   background-attachment: fixed;
   background-position: center;
 }
-.custom-border {
-  border: 2px solid #ffffff; /* Cambia el color y el grosor del borde según tus preferencias */
-  border-radius: 8px; /* Ajusta el radio de las esquinas si lo deseas */
+
+a {
+  text-decoration: none;
 }
+
+.menu__link {
+  color: #fff;
+  line-height: 4;
+  position: relative;
+}
+
+
+.menu__link::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  transition: transform .4s, opacity .4s;
+  opacity: 0;
+}
+
+.menu__link:hover::before {
+  transform: translateY(-.25rem);
+  opacity: 1;
+}
+
+.menu__link--active::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  transform: translateY(-.25rem);
+  opacity: 1;
+}
+
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.menu-animation {
+  animation: slideFadeIn 0.5s ease-out forwards;
+}
+
+
 
 @tailwind base;
 @tailwind components;
