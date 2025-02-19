@@ -39,7 +39,7 @@ const Products = [
 
 const CarouselProducts = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-[70vh] sm:">
+    <div className="flex flex-col justify-center items-center h-[70vh] w-full">
       <div className="mb-12  font-bold text-2xl lg:text-4xl lg:mb-14">
         <p>Descubre nuestro portafolio</p>
       </div>
