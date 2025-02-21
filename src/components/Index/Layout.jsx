@@ -1,7 +1,7 @@
-
 import ImgPrincipal from "./ImgPrincipal";
 import CarouselProducts from "./CarouselProducts";
 import Elegimos from "./Elegimos";
+import Colors from "./Colors";
 
 
 const Layout = () => {
@@ -11,9 +11,8 @@ const Layout = () => {
         <ImgPrincipal />
       </div>
       <CarouselProducts />
-
-      <Elegimos/>
-
+      <Elegimos />
+      <Colors />
     </div>
   );
 };
