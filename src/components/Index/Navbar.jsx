@@ -1,6 +1,8 @@
 import { GrClose } from "react-icons/gr";
 import { TfiMenu } from "react-icons/tfi";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Links = [
   {
@@ -73,24 +75,35 @@ const Navbar = () => {
       </div>
     </div>
 
-    <div className="block lg:hidden">
-      {toggle ? (
-        <div className="menu-square"> {/* Aplica la clase menu-square */}
-          <ul className="text-center">
-            {Links.map((link) => (
-              <li
-                key={link.id}
-                className="text-white text-xl mb-4 cursor-pointer"
+    <AnimatePresence>
+          {toggle && (
+            <>
+              
+
+              {/* Menú modal */}
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -100, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="fixed inset-y-0 left-0 flex flex-col items-start p-5 z-50 w-64 bg-gray-800"
               >
-                {link.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <div></div>
-      )}
-    </div>
+                <ul className="space-y-4 w-full">
+                  {Links.map((link) => (
+                    <li key={link.id} className="border-b border-white/20 pb-3">
+                      <a
+                        href={link.link}
+                        className="text-white text-xl block p-3 rounded transition-all menu__link"
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
   </div>
 </>
   );
