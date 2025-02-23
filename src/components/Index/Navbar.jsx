@@ -2,6 +2,7 @@ import { GrClose } from "react-icons/gr";
 import { TfiMenu } from "react-icons/tfi";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom"; 
 
 const Links = [
   {
@@ -11,23 +12,24 @@ const Links = [
   },
   {
     id: 2,
-    link: "/Nosotros",
+    link: "/AboutUs/Nosotros",
     name: "Nosotros",
   },
   {
     id: 3,
-    link: "/Productos",
+    link: "/Products/Productos",
     name: "Productos",
   },
   {
     id: 4,
-    link: "/Contactanos",
+    link: "/Contact/Contactanos",
     name: "Contáctanos",
   },
 ];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const location = useLocation();
 
   function openMenu() {
     setToggle(true);
@@ -44,26 +46,26 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between lg:flex-row px-3">
           <div>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-white font-mono text-3xl tracking-wider flex items-center"
             >
               NEPTUNO
-            </a>
+            </Link>
           </div>
 
           <div className="space-x-4">
             <div className="hidden lg:block space-x-10 pr-16">
               {Links.map((link) => (
-                <a
+                <Link
                   key={link.id}
-                  href={link.link}
+                  to={link.link}
                   className={`text-white rounded-full px-5 py-2 text-xl menu__link ${
                     location.pathname === link.link ? "menu__link--active" : ""
                   }`}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
             <div className="block lg:hidden">
@@ -90,12 +92,13 @@ const Navbar = () => {
                 <ul className="space-y-4 w-full">
                   {Links.map((link) => (
                     <li key={link.id} className="border-b border-white/60 pb-3">
-                      <a
-                        href={link.link}
+                      <Link
+                        to={link.link}
                         className="text-white text-xl block p-3 rounded transition-all menu__link"
+                        onClick={closeMenu}
                       >
                         {link.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
