@@ -3,7 +3,6 @@ import { TfiMenu } from "react-icons/tfi";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const Links = [
   {
     id: 1,
@@ -37,60 +36,60 @@ const Navbar = () => {
     setToggle(false);
   }
 
-  
   return (
-    <>
-  <div>
-    <div className="flex items-center justify-between lg:flex-row px-3">
-      <div>
-        <a
-          href="/"
-          className="text-white font-mono text-3xl tracking-wider flex items-center"
-        >
-          NEPTUNO
-        </a>
-      </div>
-
-      <div className="space-x-4">
-        <div className="hidden lg:block space-x-10 pr-16">
-          {Links.map((link) => (
+    <div className="absolute top-0 left-0 z-10 w-full">
+      <div
+        className="fixed bg-gradient-to-r from-[#00409A]/70 to-[#00409A]/70 rounded-full p-2 mt-5 shadow-lg 
+               max-w-[calc(100%-2rem)] border-20 border-white/30 left-1/2 -translate-x-1/2 w-full"
+      >
+        <div className="flex items-center justify-between lg:flex-row px-3">
+          <div>
             <a
-              key={link.id}
-              href={link.link}
-              className={`text-white rounded-full px-5 py-2 text-xl menu__link ${
-                location.pathname === link.link ? "menu__link--active" : ""
-              }`}
+              href="/"
+              className="text-white font-mono text-3xl tracking-wider flex items-center"
             >
-              {link.name}
+              NEPTUNO
             </a>
-          ))}
-        </div>
-        <div className="block lg:hidden">
-          {toggle ? (
-            <GrClose onClick={closeMenu} size={30} className="text-white" />
-          ) : (
-            <TfiMenu onClick={openMenu} size={30} className="text-white" />
-          )}
-        </div>
-      </div>
-    </div>
+          </div>
 
-    <AnimatePresence>
+          <div className="space-x-4">
+            <div className="hidden lg:block space-x-10 pr-16">
+              {Links.map((link) => (
+                <a
+                  key={link.id}
+                  href={link.link}
+                  className={`text-white rounded-full px-5 py-2 text-xl menu__link ${
+                    location.pathname === link.link ? "menu__link--active" : ""
+                  }`}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+            <div className="block lg:hidden">
+              {toggle ? (
+                <GrClose onClick={closeMenu} size={30} className="text-white" />
+              ) : (
+                <TfiMenu onClick={openMenu} size={30} className="text-white" />
+              )}
+            </div>
+          </div>
+        </div>
+
+        <AnimatePresence>
           {toggle && (
             <>
-              
-
               {/* Menú modal */}
               <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: -100, opacity: 0 }}
+                initial={{ x: -100, opacity: 0, height: 0 }} 
+                animate={{ x: 0, opacity: 1, height: "100vh" }} 
+                exit={{ x: -100, opacity: 0, height: 0 }} 
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="fixed inset-y-0 left-0 flex flex-col items-start p-5 z-50 w-64 bg-gray-800"
+                className="fixed inset-y-0 left-0 flex flex-col items-start p-5 z-50 w-64 from-[#00409A]/80 to-[#00409A]/80 bg-gradient-to-r mt-14"
               >
                 <ul className="space-y-4 w-full">
                   {Links.map((link) => (
-                    <li key={link.id} className="border-b border-white/20 pb-3">
+                    <li key={link.id} className="border-b border-white/60 pb-3">
                       <a
                         href={link.link}
                         className="text-white text-xl block p-3 rounded transition-all menu__link"
@@ -104,8 +103,8 @@ const Navbar = () => {
             </>
           )}
         </AnimatePresence>
-  </div>
-</>
+      </div>
+    </div>
   );
 };
 

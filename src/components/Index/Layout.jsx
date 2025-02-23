@@ -7,6 +7,7 @@ import Colors from "./Colors";
 const Layout = () => {
   return (
     <div className="w-full max-w-screen">
+      
       <div className="relative z-0">
         <ImgPrincipal />
       </div>
