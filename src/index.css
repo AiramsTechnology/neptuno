@@ -103,7 +103,7 @@ a {
   }
 }
 
-.card {
+.cards {
   position: absolute;
   border: 2px solid rgba(var(--color-card), 0.8);
   border-radius: 12px;
