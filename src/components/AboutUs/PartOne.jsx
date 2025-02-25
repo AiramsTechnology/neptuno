@@ -7,25 +7,30 @@ const PartOne = () => {
       className="relative bg-cover bg-center bg-no-repeat text-white py-28 px-8"
       style={{ backgroundImage: "url('/nosotros.webp')" }}
     >
-
       <div className=" p-8 rounded-lg max-w-5xl mx-auto">
-        
+        <div className="border-t border-white mb-4"></div>
+
         <h2 className="text-4xl font-bold text-center mb-6">QUIENES SOMOS</h2>
 
-        <p className="text-center text-lg mb-8 leading-relaxed">
+        <p className="text-center text-lg mb-2 mx-24 leading-snug">
           Somos una empresa dinámica que se dedica a brindar servicios personalizados y soluciones de calidad. 
           Nuestro objetivo principal es ofrecer un servicio integral en mantenimiento de edificios (empresariales 
           y multifamiliares) y almacenes industriales, con el fin de prolongar la vida útil de los inmuebles. 
           Contamos con un plan integral que logra un impacto positivo en la gestión, asesoría y seguridad en beneficio 
           de los propietarios. Estamos seguros de que, con nuestros servicios, podemos transformar espacios en lugares ideales.
         </p>
+        <div className="border-t border-white mt-4 mb-8"></div>
 
         {/* Imagen pequeña y lista de valores */}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Imagen de los círculos */}
-      
-      // imagen de ciruclos 
+          <img
+            src="/circulos.webp"
+            alt="Calidad, Ahorro, Garantía"
+            className="w-64 h-auto rounded-lg shadow-lg"
+          />
 
+          {/* Lista de características */}
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <FaStar className="text-blue-500 text-3xl" />
