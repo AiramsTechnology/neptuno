@@ -17,7 +17,7 @@ const Card = [
 
 function Cards() {
   return (
-    <div className="flex flex-wrap gap-4 justify-center p-4 ">
+    <div className="flex flex-wrap gap-16 justify-center p-11  ">
       {Card.map((card) => (
         <div key={card.id} className="card ">
           {/*parte de adelante de la card */}

@@ -4,11 +4,11 @@ import { FaStar } from "react-icons/fa";
 const PartOne = () => {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat text-white py-16 px-6"
+      className="relative bg-cover bg-center bg-no-repeat text-white py-28 px-8"
       style={{ backgroundImage: "url('/nosotros.webp')" }}
     >
 
-      <div className="bg-black bg-opacity-50 p-8 rounded-lg max-w-5xl mx-auto">
+      <div className=" p-8 rounded-lg max-w-5xl mx-auto">
         
         <h2 className="text-4xl font-bold text-center mb-6">QUIENES SOMOS</h2>
 
