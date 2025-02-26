@@ -20,11 +20,6 @@ const Links = [
     link: "/Products/Productos",
     name: "Productos",
   },
-  {
-    id: 4,
-    link: "/Contact/Contactanos",
-    name: "Contáctanos",
-  },
 ];
 
 const Navbar = () => {
