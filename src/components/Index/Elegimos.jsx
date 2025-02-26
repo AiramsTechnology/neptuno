@@ -5,9 +5,8 @@ const FeaturesSection = () => {
   const features = ["Durabilidad", "Calidad", "Tendencia", "Sostenibilidad", "Variedad", "Innovación"];
 
   return (
-    <div className="relative flex flex-col lg:flex-row items-center justify-center min-h-[70vh] bg-gradient-to-r from-[#00409A] to-[#D9D9D9] px-6 py-12">
-      {/* Filtro Gooey Global */}
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: 'block', height: 0, width: 0 }}>
+    <div className="relative flex flex-col lg:flex-row items-center justify-center min-h-[70vh] bg-gradient-to-r from-[#00409A] to-[#D9D9D9] px-4 py-12">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: "block", height: 0, width: 0 }}>
         <defs>
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
@@ -17,27 +16,31 @@ const FeaturesSection = () => {
         </defs>
       </svg>
 
-      {/* Sección de texto */}
-      <div className="w-full lg:w-1/3 max-w-[600px] text-center text-white mb-16 lg:mb-0 lg:mr-48">
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6">¿Por qué elegirnos?</h2>
-        <p className="text-lg lg:text-xl">
+
+      <div className="w-full lg:w-1/3 max-w-[600px] text-center text-white mb-10 lg:mb-0 lg:mr-12 px-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">¿Por qué elegirnos?</h2>
+        <p className="text-sm sm:text-base md:text-lg leading-snug">
           En nuestra tienda, entendemos que la pintura no es solo color, sino una forma de expresión y transformación.
           Dándole un toque único a tu negocio o emprendimiento en un nuevo proyecto, queremos acompañarte en cada paso
           con productos de la más alta calidad y un servicio excepcional.
         </p>
       </div>
 
-      {/* Sección de botones con efecto gooey en un solo botón con borde negro y texto negro */}
-      <div className="w-full lg:w-1/3 max-w-[500px] grid grid-cols-2 gap-6 lg:gap-8 justify-items-center">
+      <div className="w-full lg:w-1/3 max-w-[500px] grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 justify-items-center">
         {features.map((feature) => (
           <button
             key={feature}
-            className={`relative c-button c-button--gooey px-8 py-3 text-lg rounded-full transition-all w-full lg:w-[220px] text-center border-2 border-black bg-white text-black hover:bg-gray-200 overflow-hidden group`}
+            className={`relative c-button c-button--gooey px-2  py-2 text-xs sm:text-sm md:text-base rounded-full transition-all 
+                        w-full min-w-[100px] max-w-full text-center border-2 border-black bg-white text-black 
+                        hover:bg-gray-200 overflow-hidden whitespace-nowrap`}
             onClick={() => setSelected(feature)}
           >
             {feature}
             {selected === feature && (
-              <span className="c-button__blobs absolute inset-0 flex justify-center items-center overflow-hidden" style={{ filter: 'url(#goo)' }}>
+              <span
+                className="c-button__blobs absolute inset-0 flex justify-center items-center overflow-hidden"
+                style={{ filter: "url(#goo)" }}
+              >
                 <div className="absolute w-full h-full bg-blue-500 animate-wave"></div>
               </span>
             )}
@@ -45,7 +48,6 @@ const FeaturesSection = () => {
         ))}
       </div>
 
-      {/* Animación de ola */}
       <style jsx>{`
         @keyframes wave {
           0% {
@@ -61,7 +63,7 @@ const FeaturesSection = () => {
 
         .animate-wave {
           animation: wave 2s ease-in-out infinite;
-          background: linear-gradient(90deg, #06c8d9 0%, #00409A 100%);
+          background: linear-gradient(90deg, #06c8d9 0%, #00409a 100%);
           opacity: 0.6;
         }
       `}</style>
