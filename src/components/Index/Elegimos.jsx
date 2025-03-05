@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { InView } from "/components/motion-primitives/in-view";
+import { motion } from 'motion/react';
 
 const FeaturesSection = () => {
   const [selected, setSelected] = useState(null);
