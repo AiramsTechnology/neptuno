@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nosotros from "./components/AboutUs/Nosotros";
 import Contactanos from "./components/Contact/Contactanos";
 import Productos from "./components/Products/Productos";
+import WhatsApp from "./components/Index/Whatsapp";
+import Flayer from "./components/Products/Flayer";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -17,9 +19,11 @@ function App() {
           <Route path="/" element={<Layout />} />
           <Route path="/AboutUs/Nosotros" element={<Nosotros />} />
           <Route path="/Products/Productos" element={<Productos />} />
+          <Route path="/Products/Flayer" element={<Flayer/>} />
           <Route path="/Contact/Contactanos" element={<Contactanos/>} />
         </Routes>
         <Footer />
+        <WhatsApp/>
       </BrowserRouter>
     </div>
   );
