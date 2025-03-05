@@ -10,21 +10,53 @@ export const categories = [
           id: 1,
           name: "Autonivellante Epoxico 12KG",
           img: "/carouselproducts/product1.webp",
+          technit: [{
+            id: 1,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
         {
-          id: 1,
+          id: 2,
           name: "Autonivellante Epoxico 12KG",
           img: "/carouselproducts/product2.webp",
+          technit: [{
+            id: 2,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
         {
           id: 3,
           name: "Set de pigmentos Metálicos 10 colores x 35G",
           img: "/carouselproducts/product3.webp",
+          technit: [{
+            id: 3,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
         {
           id: 4,
           name: "Kit de pintura epoxica 1GL",
           img: "/carouselproducts/product4.webp",
+          technit: [{
+            id: 4,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
       ],
     },
@@ -39,11 +71,27 @@ export const categories = [
           id: 1,
           name: "Autonivellante Epoxico 12KG",
           img: "/carouselproducts/product1.webp",
+          technit: [{
+            id: 1,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
         {
           id: 2,
           name: "Autonivellante Epoxico 12KG",
           img: "/carouselproducts/product2.webp",
+          technit: [{
+            id: 2,
+            ACABADO: "Mate",
+            RENDIMIENTO: "....",
+            PINTADO: "...",
+            PRESENTACION: "...",
+            APLICACION: "...",
+          }]
         },
       ],
     },
