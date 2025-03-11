@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { categories } from "../../data/products";
+import { GoTriangleDown } from "react-icons/go";
 
 function Productos() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -30,29 +31,42 @@ function Productos() {
         <div className="border-t-2 border-[#00409A] my-5 lg:w-[120vh] md:w-[60vh] w-[35vh]"></div>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-12 place-items-center m-16">
-        {categories.map((category) => (
-          <div key={category.id} className="w-80">
-            <div
-              className="relative group cursor-pointer overflow-hidden duration-500 h-44 text-gray-50 p-5"
-              style={{
-                borderRadius: "25px",
-                backgroundImage: `${category.gradient}, url(${category.img})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundBlendMode: "multiply",
-              }}
-              onClick={() => openModal(category)}
-            >
-              <div>
-                <div className="absolute w-full left-0 p-3 bottom-0 duration-500 group-hover:-translate-y-10">
-                  <p className="text-2xl font-normal text-center">{category.name}</p>
+       <div className="grid md:grid-cols-2 grid-cols-1 gap-12 place-items-center m-16">
+              {categories.map((category) => (
+                <div key={category.id} className="w-80">
+                  {/* Cuadro principal de la categoría */}
+                  <div
+                    className="relative group cursor-pointer overflow-hidden duration-500 h-44 text-gray-50 p-5"
+                    style={{
+                      borderRadius: "25px",
+                      backgroundImage: `${category.gradient}, url(${category.img})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundBlendMode: "multiply",
+                    }}
+                    onClick={() => openModal(category)}
+                  >
+                    <div>
+                      <div className="absolute w-full left-0 p-3 bottom-0 duration-500 group-hover:-translate-y-10">
+                        <p className="text-2xl font-normal text-center">
+                          {category.name}
+                        </p>
+                        <div className="mt-0">
+                          <span className="flex justify-center items-center text-5xl group-hover:opacity-0 duration-300">
+                            <GoTriangleDown />
+                          </span>
+                          <div className="group-hover:opacity-100 duration-500 opacity-0 group-hover:-translate-y-8 absolute -z-10 left-0 w-80 h-28 group-hover:bg-[#0f172a]/40 rounded-lg">
+                            <p className="text-center text-white mx-10">
+                              {category.info}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
 
       {selectedCategory && (
         <div
