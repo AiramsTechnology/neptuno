@@ -1,7 +1,9 @@
 import { GoTriangleDown } from "react-icons/go";
 import { useState } from "react";
 import { categories } from "../../data/products";
+
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+
 
 function Productos() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -29,6 +31,7 @@ function Productos() {
         <p className="text-4xl font-bold text-center">PRODUCTOS</p>
         <div className="border-t-2 border-[#00409A] my-5 lg:w-[120vh] md:w-[60vh] w-[35vh]"></div>
       </div>
+
 
       {/* Grid de categorías */}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-12 place-items-center m-16">
@@ -59,14 +62,12 @@ function Productos() {
                       <p className="text-center text-white mx-10">
                         {category.info}
                       </p>
+
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
 
       {/* Modal */}
       {selectedCategory && (
