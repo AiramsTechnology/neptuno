@@ -1,7 +1,7 @@
 export const categories = [
     {
       id: 1,
-      name: "Pintura Epóxica",
+      name: "categoria 1",
       info: "Productos que acompañan en el resultado",
       img: "/ProductsCard/img1.webp",
       gradient: "linear-gradient(to bottom, rgba(255, 0, 0, 0.30), rgba(255, 0, 0, 0.45))",
@@ -18,7 +18,7 @@ export const categories = [
         },
         {
           id: 2,
-          name: "Autonivellante Epoxico 12KG",
+          name: "categoria 2",
           img: "/carouselproducts/product2.webp",
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
