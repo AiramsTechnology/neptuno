@@ -9,17 +9,11 @@ const FichaTecnica = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    let foundProduct = null;
-    categories.forEach(category => {
-      const item = category.items.find(item => item.id === parseInt(productId));
-      if (item) {
-        foundProduct = item;
-      }
-    });
+    const foundProduct = categories
+      .flatMap(category => category.items) // Unir todos los productos en un solo array
+      .find(item => item.id === parseInt(productId)); // Buscar el producto correcto
 
-    if (foundProduct) {
-      setProduct(foundProduct);
-    }
+    setProduct(foundProduct || null);
   }, [productId]);
 
   if (!product) {
@@ -35,6 +29,15 @@ const FichaTecnica = () => {
       </div>
     );
   }
+
+  // ✅ Función para descargar la ficha técnica
+  const handleDownloadPDF = () => {
+    if (product.pdf) {
+      window.open(product.pdf, "_blank"); // Abre el PDF en una nueva pestaña
+    } else {
+      alert("No hay ficha técnica disponible para este producto.");
+    }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#062B65] text-white p-8">
@@ -56,7 +59,7 @@ const FichaTecnica = () => {
           <h2 className="text-xl font-semibold mb-3">Detalles técnicos:</h2>
 
           <div className="grid grid-cols-2 gap-2 w-full max-w-md">
-            {[
+            {[ 
               { icon: <Droplet size={25} />, label: "Acabado", value: product.ACABADO },
               { icon: <Ruler size={25} />, label: "Rendimiento", value: product.RENDIMIENTO },
               { icon: <Square size={25} />, label: "Pintado", value: product.PINTADO },
@@ -74,9 +77,9 @@ const FichaTecnica = () => {
             ))}
           </div>
 
-          {/* Botón de ficha técnica */}
+          {/* ✅ Botón para descargar la ficha técnica */}
           <button
-            onClick={() => alert('Descargando ficha técnica...')}
+            onClick={handleDownloadPDF}
             className="mt-4 bg-[#FFD700] text-[#062B65] px-6 py-2 rounded-lg font-semibold hover:bg-[#FFC107] transition"
           >
             Ficha Técnica
@@ -84,7 +87,7 @@ const FichaTecnica = () => {
 
           {/* Botón de regresar */}
           <button
-            onClick={() => navigate('/productos')}
+            onClick={() => navigate('/Products/Productos')}
             className="mt-3 bg-white text-[#062B65] px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition"
           >
             Volver a productos
