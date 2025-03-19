@@ -1,23 +1,15 @@
 export const categories = [
     {
       id: 1,
-<<<<<<< HEAD
       name: "LINEA INDUSTRIAL",
       info: "Recubrimientos y protecciones que garantizan durabilidad y resistencia.",
-=======
-      name: "LINEA INDUSTRIAL ",
-      info: "Productos que acompañan en el resultado",
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
+
       img: "/ProductsCard/img1.webp",
       gradient: "linear-gradient(to bottom, rgba(255, 0, 0, 0.30), rgba(255, 0, 0, 0.45))",
       items: [
         {
           id: 1,
-<<<<<<< HEAD
           name: "Acondicionador de Metales",
-=======
-          name: "Acondicionador de Metales 12KG",
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
           img: "/carouselproducts/product1.webp",
           pdf: "/pdf/FT_ACONDICIONADOR_DE_METALES_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
@@ -80,10 +72,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-<<<<<<< HEAD
-          id: 2,
-          name: "Protector de Metales",
-=======
+
           id: 12,
           name: "Removedor de Salitre",
           img: "/carouselproducts/product2.webp",
@@ -97,7 +86,6 @@ export const categories = [
         {
           id: 13,
           name: "Bloqueador de Salitre",
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
           img: "/carouselproducts/product2.webp",
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
@@ -106,16 +94,11 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-<<<<<<< HEAD
-          id: 3,
-          name: "Removedor de Oxido",
-          img: "/carouselproducts/product3.webp",
-=======
+
           id: 14,
           name: "Primer Acrílico",
           img: "/carouselproducts/product2.webp",
           pdf: "/pdf/FT_PRIMER_ACRÍLICO_NEPTUNO.pdf", // Ruta del PDF correspondiente
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
             PINTADO: "pintado",
@@ -123,35 +106,12 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-<<<<<<< HEAD
-          id: 4,
-          name: "Transformador de Oxido",
-          img: "/carouselproducts/product4.webp",
-            ACABADO: "Mate",
-            RENDIMIENTO: "rendimiento",
-            PINTADO: "pintado",
-            PRESENTACION: "presentacion",
-            APLICACION: "aplicacion",
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "LINEA CONSTRUCCION",
-      info: "Aditivos que optimizan la resistencia y durabilidad en construcción.",
-      img: "/ProductsCard/img2.webp",
-      gradient: "linear-gradient(to bottom, rgba(0, 115, 245, 0.45), rgba(0, 115, 245, 0.45))",
-      items: [
-        {
-          id: 1,
-          name: "Removedor de Cemento",
-          img: "/carouselproducts/product1.webp",
-=======
+
           id: 15,
           name: "Sellador de Fraguas",
           img: "/carouselproducts/product2.webp",
           pdf: "/pdf/FT_SELLADOR_DE_FRAGUA_NEPTUNO.pdf", // Ruta del PDF correspondiente
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
+
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
             PINTADO: "pintado",
@@ -159,54 +119,9 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-<<<<<<< HEAD
-          id: 2,
-          name: "Removedor de Salitre",
-          img: "/carouselproducts/product2.webp",
-            ACABADO: "Mate",
-            RENDIMIENTO: "rendimiento",
-            PINTADO: "pintado",
-            PRESENTACION: "presentacion",
-            APLICACION: "aplicacion",
-        },
-        {
-          id: 3,
-          name: "Bloqueador de Salitre",
-          img: "/carouselproducts/product2.webp",
-            ACABADO: "Mate",
-            RENDIMIENTO: "rendimiento",
-            PINTADO: "pintado",
-            PRESENTACION: "presentacion",
-            APLICACION: "aplicacion",
-        },
-        {
-          id: 4,
-          name: "Primer Acrílico",
-          img: "/carouselproducts/product2.webp",
-            ACABADO: "Mate",
-            RENDIMIENTO: "rendimiento",
-            PINTADO: "pintado",
-            PRESENTACION: "presentacion",
-            APLICACION: "aplicacion",
-        },
-        {
-          id: 5,
-          name: "Sellador de Fraguas",
-          img: "/carouselproducts/product2.webp",
-            ACABADO: "Mate",
-            RENDIMIENTO: "rendimiento",
-            PINTADO: "pintado",
-            PRESENTACION: "presentacion",
-            APLICACION: "aplicacion",
-        },
-        {
-          id: 5,
-          name: "Superclean Multiusos",
-=======
           id: 16,
           name: "Superclean Multiusos",
->>>>>>> 586c54db01ebfca289181f2a00ee6e5c1dc397ad
-          img: "/carouselproducts/product2.webp",
+       img: "/carouselproducts/product2.webp",
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
             PINTADO: "pintado",
