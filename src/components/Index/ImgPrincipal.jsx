@@ -42,10 +42,10 @@ function ImgPrincipal() {
                 NEPTUNO
               </TextEffect>
               <TextEffect per="char" delay={1.5}>
-                Resistencia que desafía
+              Diseñadas para resistir,
               </TextEffect>
               <TextEffect per="char" delay={2.5}>
-                los elementos .
+              hechas para durar.
               </TextEffect>
             </div>
           </h1>
