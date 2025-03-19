@@ -4,22 +4,20 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#D9D9D9] py-8 px-6">
-
-
-      <div className="flex flex-col lg:flex-row items-center justify-center border-b border-black pb-6 gap-[20px] lg:gap-[380px]"> {/* 10 cm de separación */}
+      <div className="flex flex-col lg:flex-row items-center justify-center border-b border-black pb-6 gap-[20px] lg:gap-[200px]">
+        {" "}
+        {/* 10 cm de separación */}
         <p className="text-center font-bold text-lg md:text-2xl lg:text-3xl leading-snug">
           PINTA CON LOS QUE SABEN PINTA CON
         </p>
-
-
-
+        <div className="md:w-28 md:h-28 lg:w-auto l w-1/2 h-1/2 object-contain place-content-center">
           <img
-            src="/ruta/al/logo.png"
-            alt="Logo"
-            className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain place-content-center"
+            src="/logofooter.webp"
+            alt="Logo footer"
+            className="w-full h-full object-contain"
           />
+        </div>
       </div>
-
 
       <div className="mt-6 flex flex-col items-center justify-center">
         <p className="text-sm md:text-base lg:text-lg mb-3 font-medium">

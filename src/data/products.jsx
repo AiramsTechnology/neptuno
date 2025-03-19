@@ -3,14 +3,15 @@ export const categories = [
       id: 1,
       name: "LINEA INDUSTRIAL",
       info: "Recubrimientos y protecciones que garantizan durabilidad y resistencia.",
-
       img: "/ProductsCard/img1.webp",
       gradient: "linear-gradient(to bottom, rgba(255, 0, 0, 0.30), rgba(255, 0, 0, 0.45))",
       items: [
         {
-          id: 1,
+
+          id: 10,
           name: "Acondicionador de Metales",
-          img: "/carouselproducts/product1.webp",
+          img: "/products/acondicionadorDeMetales.webp",
+          oneproduct:"/carouselproducts/acondicionadorDeMetales.webp",
           pdf: "/pdf/FT_ACONDICIONADOR_DE_METALES_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "Variable",
@@ -19,20 +20,22 @@ export const categories = [
             APLICACION: "Superficies metálicascacion",
         },
         {
-          id: 2,
+          id: 20,
           name: "Protector de Metales",
-          img: "/carouselproducts/product2.webp",
+          img: "/products/protectorDeMetales.webp",
+          oneproduct:"/carouselproducts/protectorDeMetales.webp",
           pdf: "/pdf/FT_PROTECTOR_DE_METALES_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "30 m2",
             PINTADO: "Interior y Exterior",
-            PRESENTACION: "Galónl, 05 Galones, Cilindro",
+            PRESENTACION: "Galón, 05 Galones, Cilindro",
             APLICACION: "Brocha o rodillo",
         },
         {
-          id: 3,
+          id: 30,
           name: "Removedor de Oxido",
-          img: "/carouselproducts/product3.webp",
+          img: "/products/removedorDeOxido.webp",
+          oneproduct:"/carouselproducts/removedorDeOxido.webp",
           pdf: "/pdf/FT_REMOVEDOR_DE_OXIDO_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "30 m2",
@@ -41,9 +44,10 @@ export const categories = [
             APLICACION: " inmersión o por frotación",
         },
         {
-          id: 4,
+          id: 40,
           name: "Transformador de Oxido",
-          img: "/carouselproducts/product4.webp",
+          img: "/products/transformadorDeOxido.webp",
+          oneproduct:"/carouselproducts/transformadorDeOxido.webp",
           pdf: "/pdf/FT_TRANSFORMADOR_DE_OXIDO_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: " 1 Lt ",
@@ -63,7 +67,8 @@ export const categories = [
         {
           id: 11,
           name: "Removedor de Cemento",
-          img: "/carouselproducts/product1.webp",
+          img: "/products/removedorDeCemento.webp",
+          oneproduct:"/carouselproducts/removedorDeCemento.webp",
           pdf: "/pdf/FT_REMOVEDOR_DE_CEMENTO_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
@@ -72,10 +77,11 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
+          id: 21,
 
-          id: 12,
           name: "Removedor de Salitre",
-          img: "/carouselproducts/product2.webp",
+          img: "/products/removedorDeSalitre.webp",
+          oneproduct:"/carouselproducts/removedorDeSalitre.webp",
           pdf: "/pdf/FT_REMOVEDOR_DE_SALITRE_NEPTUNOs.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
@@ -84,9 +90,12 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 13,
+          id: 31,
           name: "Bloqueador de Salitre",
-          img: "/carouselproducts/product2.webp",
+
+          img: "/products/bloqueadorDeSalitre.webp",
+          oneproduct:"/carouselproducts/bloqueadorDeSalitre.webp",
+
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
             PINTADO: "pintado",
@@ -94,10 +103,10 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-
-          id: 14,
+          id: 41,
           name: "Primer Acrílico",
-          img: "/carouselproducts/product2.webp",
+          img: "/products/primerAcrilico.webp",
+          oneproduct:"/carouselproducts/primerAcrilico.webp",
           pdf: "/pdf/FT_PRIMER_ACRÍLICO_NEPTUNO.pdf", // Ruta del PDF correspondiente
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
@@ -107,10 +116,31 @@ export const categories = [
         },
         {
 
-          id: 15,
-          name: "Sellador de Fraguas",
-          img: "/carouselproducts/product2.webp",
-          pdf: "/pdf/FT_SELLADOR_DE_FRAGUA_NEPTUNO.pdf", // Ruta del PDF correspondiente
+
+          id: 51,
+          name: "Transformador de Oxido",
+          img: "/products/transformadorDeOxido.webp",
+          oneproduct:"/carouselproducts/transformadorDeOxido.webp",
+            ACABADO: "Mate",
+            RENDIMIENTO: "rendimiento",
+            PINTADO: "pintado",
+            PRESENTACION: "presentacion",
+            APLICACION: "aplicacion",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "LINEA CONSTRUCCION",
+      info: "Aditivos que optimizan la resistencia y durabilidad en construcción.",
+      img: "/ProductsCard/img2.webp",
+      gradient: "linear-gradient(to bottom, rgba(0, 115, 245, 0.45), rgba(0, 115, 245, 0.45))",
+      items: [
+        {
+          id: 12,
+          name: "Removedor de Cemento",
+          img: "/products/removedorDeCemento.webp",
+          oneproduct:"/carouselproducts/removedorDeCemento.webp",
 
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
@@ -119,9 +149,56 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 16,
-          name: "Superclean Multiusos",
-       img: "/carouselproducts/product2.webp",
+
+
+          id: 22,
+          name: "Removedor de Salitre",
+          img: "/products/removedorDeSalitre.webp",
+          oneproduct:"/carouselproducts/removedorDeSalitre.webp",
+            ACABADO: "Mate",
+            RENDIMIENTO: "rendimiento",
+            PINTADO: "pintado",
+            PRESENTACION: "presentacion",
+            APLICACION: "aplicacion",
+        },
+        {
+          id: 32,
+          name: "Bloqueador de Salitre",
+          img: "/products/bloqueadorDeSalitre.webp",
+          oneproduct:"/carouselproducts/bloqueadorDeSalitre.webp",
+            ACABADO: "Mate",
+            RENDIMIENTO: "rendimiento",
+            PINTADO: "pintado",
+            PRESENTACION: "presentacion",
+            APLICACION: "aplicacion",
+        },
+        {
+          id: 42,
+          name: "Primer Acrílico",
+          img: "/products/primerAcrilico.webp",
+          oneproduct:"/carouselproducts/primerAcrilico.webp",
+            ACABADO: "Mate",
+            RENDIMIENTO: "rendimiento",
+            PINTADO: "pintado",
+            PRESENTACION: "presentacion",
+            APLICACION: "aplicacion",
+        },
+        {
+          id: 52,
+          name: "Sellador de Fraguas",
+          img: "/products/selladorDeFraguas.webp",
+          oneproduct:"/carouselproducts/selladorDeFraguas.webp",
+            ACABADO: "Mate",
+            RENDIMIENTO: "rendimiento",
+            PINTADO: "pintado",
+            PRESENTACION: "presentacion",
+            APLICACION: "aplicacion",
+        },
+        {
+          id: 62,
+          name: "Superclean Multiusos",
+          img: "/products/superCleanMultiusos.webp",
+          oneproduct:"/carouselproducts/superCleanMultiusos.webp",
             ACABADO: "Mate",
             RENDIMIENTO: "rendimiento",
             PINTADO: "pintado",

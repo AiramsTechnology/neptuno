@@ -1,26 +1,26 @@
 import { GoTriangleDown } from "react-icons/go";
 import { useState } from "react";
 import { categories } from "../../data/products";
-import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 function Productos() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [isClosing, setIsClosing] = useState(false); // Estado para controlar la animación de cierre
-  const navigate = useNavigate(); // Hook para navegar
+  const [isClosing, setIsClosing] = useState(false); 
+  const navigate = useNavigate(); 
 
   const openModal = (category) => {
     setSelectedCategory(category);
-    setIsClosing(false); // Asegurarnos de que la animación de cierre no se active al abrir
+    setIsClosing(false); 
   };
 
   const closeModal = () => {
-    setIsClosing(true); // Iniciar la animación de cierre
+    setIsClosing(true); 
     setTimeout(() => {
-      setSelectedCategory(null); // Después de la animación, cerrar el modal
-    }, 300); // Tiempo de la animación de cierre
+      setSelectedCategory(null); 
+    }, 300); 
   };
   const handleProductClick = (productId) => {
-    navigate(`/FichaTecnica/${productId}`); // Redirige a la ficha técnica
+    navigate(`/FichaTecnica/${productId}`); 
   };
 
   return (
@@ -97,7 +97,7 @@ function Productos() {
                   onClick={() => handleProductClick(item.id)} // Redirige al hacer clic
                 >
                   <img
-                    src={item.img}
+                    src={item.oneproduct}
                     alt={item.name}
                     className="w-16 h-16 rounded-lg"
                   />
