@@ -65,7 +65,7 @@ export const categories = [
       gradient: "linear-gradient(to bottom, rgba(0, 115, 245, 0.45), rgba(0, 115, 245, 0.45))",
       items: [
         {
-          id: 11,
+          id: 12,
           name: "Removedor de Cemento",
           img: "/products/removedorDeCemento.webp",
           oneproduct:"/carouselproducts/removedorDeCemento.webp",
@@ -77,7 +77,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 21,
+          id: 22,
 
           name: "Removedor de Salitre",
           img: "/products/removedorDeSalitre.webp",
@@ -90,7 +90,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 31,
+          id: 32,
           name: "Bloqueador de Salitre",
 
           img: "/products/bloqueadorDeSalitre.webp",
@@ -103,7 +103,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 41,
+          id: 42,
           name: "Primer Acrílico",
           img: "/products/primerAcrilico.webp",
           oneproduct:"/carouselproducts/primerAcrilico.webp",
@@ -117,7 +117,7 @@ export const categories = [
         {
 
 
-          id: 51,
+          id: 52,
           name: "Transformador de Oxido",
           img: "/products/transformadorDeOxido.webp",
           oneproduct:"/carouselproducts/transformadorDeOxido.webp",
@@ -130,14 +130,14 @@ export const categories = [
       ],
     },
     {
-      id: 2,
+      id: 3,
       name: "LINEA CONSTRUCCION",
       info: "Aditivos que optimizan la resistencia y durabilidad en construcción.",
       img: "/ProductsCard/img2.webp",
       gradient: "linear-gradient(to bottom, rgba(0, 115, 245, 0.45), rgba(0, 115, 245, 0.45))",
       items: [
         {
-          id: 12,
+          id: 13,
           name: "Removedor de Cemento",
           img: "/products/removedorDeCemento.webp",
           oneproduct:"/carouselproducts/removedorDeCemento.webp",
@@ -151,7 +151,7 @@ export const categories = [
         {
 
 
-          id: 22,
+          id: 23,
           name: "Removedor de Salitre",
           img: "/products/removedorDeSalitre.webp",
           oneproduct:"/carouselproducts/removedorDeSalitre.webp",
@@ -162,7 +162,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 32,
+          id: 33,
           name: "Bloqueador de Salitre",
           img: "/products/bloqueadorDeSalitre.webp",
           oneproduct:"/carouselproducts/bloqueadorDeSalitre.webp",
@@ -173,7 +173,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 42,
+          id: 43,
           name: "Primer Acrílico",
           img: "/products/primerAcrilico.webp",
           oneproduct:"/carouselproducts/primerAcrilico.webp",
@@ -184,7 +184,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 52,
+          id: 53,
           name: "Sellador de Fraguas",
           img: "/products/selladorDeFraguas.webp",
           oneproduct:"/carouselproducts/selladorDeFraguas.webp",
@@ -195,7 +195,7 @@ export const categories = [
             APLICACION: "aplicacion",
         },
         {
-          id: 62,
+          id: 63,
           name: "Superclean Multiusos",
           img: "/products/superCleanMultiusos.webp",
           oneproduct:"/carouselproducts/superCleanMultiusos.webp",
@@ -207,7 +207,7 @@ export const categories = [
         },
       ],
     },
-    {
+    /**{
       id: 3,
       name: "Pintura para Barcos",
       info: "Productos que acompañan en el resultado",
@@ -264,6 +264,6 @@ export const categories = [
           APLICACION: "aplicacion",
         },
       ],
-    },
+    },**/
     
   ];
