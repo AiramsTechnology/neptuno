@@ -10,8 +10,8 @@ const FichaTecnica = () => {
 
   useEffect(() => {
     const foundProduct = categories
-      .flatMap(category => category.items) // Unir todos los productos en un solo array
-      .find(item => item.id === parseInt(productId)); // Buscar el producto correcto
+      .flatMap(category => category.items) 
+      .find(item => item.id === parseInt(productId)); 
 
     setProduct(foundProduct || null);
   }, [productId]);
@@ -30,10 +30,10 @@ const FichaTecnica = () => {
     );
   }
 
-  // ✅ Función para descargar la ficha técnica
+  
   const handleDownloadPDF = () => {
     if (product.pdf) {
-      window.open(product.pdf, "_blank"); // Abre el PDF en una nueva pestaña
+      window.open(product.pdf, "_blank"); 
     } else {
       alert("No hay ficha técnica disponible para este producto.");
     }
@@ -48,7 +48,7 @@ const FichaTecnica = () => {
           <img 
             src={product.img} 
             alt={product.name} 
-            className="w-72 h-72 rounded-lg object-cover" 
+            className="w-full h-72 rounded-lg object-cover" 
           />
         </div>
 
