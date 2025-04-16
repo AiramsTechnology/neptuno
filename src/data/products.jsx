@@ -82,7 +82,7 @@ export const categories = [
         name: "Removedor de Salitre",
         img: "/products/removedorDeSalitre.webp",
         oneproduct:"/carouselproducts/removedorDeSalitre.webp",
-        pdf: "/pdf/FT_REMOVEDOR_DE_SALITRE_NEPTUNOs.pdf", // Ruta del PDF correspondiente
+        pdf: "/pdf/FT_REMOVEDOR_DE_SALITRE_NEPTUNO.pdf", // Ruta del PDF correspondiente
           ACABADO: "Mate",
           RENDIMIENTO: "rendimiento",
           PINTADO: "pintado",
@@ -92,10 +92,9 @@ export const categories = [
       {
         id: 32,
         name: "Bloqueador de Salitre",
-
         img: "/products/bloqueadorDeSalitre.webp",
         oneproduct:"/carouselproducts/bloqueadorDeSalitre.webp",
-
+       //no tiene pdf
           ACABADO: "Mate",
           RENDIMIENTO: "rendimiento",
           PINTADO: "pintado",
@@ -115,12 +114,23 @@ export const categories = [
           APLICACION: "aplicacion",
       },
       {
-
-
         id: 52,
-        name: "Transformador de Oxido",
-        img: "/products/transformadorDeOxido.webp",
-        oneproduct:"/carouselproducts/transformadorDeOxido.webp",
+        name: "Sellador de Fraguas",
+        img: "/products/selladorDeFraguas.webp",
+        oneproduct:"/carouselproducts/selladorDeFraguas.webp",
+        pdf: "/pdf/FT_SELLADOR_DE_FRAGUA_NEPTUNO.pdf", // Ruta del PDF correspondiente
+          ACABADO: "Mate",
+          RENDIMIENTO: "rendimiento",
+          PINTADO: "pintado",
+          PRESENTACION: "presentacion",
+          APLICACION: "aplicacion",
+      },
+      {
+        id: 62,
+        name: "Superclean Multiusos",
+        img: "/products/superCleanMultiusos.webp",
+        oneproduct:"/carouselproducts/superCleanMultiusos.webp",
+        //no tiene pdf
           ACABADO: "Mate",
           RENDIMIENTO: "rendimiento",
           PINTADO: "pintado",
