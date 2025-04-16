@@ -12,20 +12,31 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="font-outfit overflow-x-hidden">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="/AboutUs/Nosotros" element={<Nosotros />} />
-          <Route path="/Products/Productos" element={<Productos />} />
-          <Route path="/FichaTecnica/:productId" element={<FichaTecnica />} />
-          <Route path="/Contact/Contactanos" element={<Contactanos/>} />
-        </Routes>
-        <Footer />
-        <WhatsApp/>
-      </BrowserRouter>
-    </div>
+    <html lang="es">
+      <head>
+        <meta charSet="UTF-8" />
+      </head>
+
+      <body>
+        <div className="font-outfit overflow-x-hidden">
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Layout />} />
+              <Route path="/AboutUs/Nosotros" element={<Nosotros />} />
+              <Route path="/Products/Productos" element={<Productos />} />
+              <Route
+                path="/FichaTecnica/:productId"
+                element={<FichaTecnica />}
+              />
+              <Route path="/Contact/Contactanos" element={<Contactanos />} />
+            </Routes>
+            <Footer />
+            <WhatsApp />
+          </BrowserRouter>
+        </div>
+      </body>
+    </html>
   );
 }
 
